@@ -1,7 +1,7 @@
 all : sum_test
 
 sum_test : sum.o main.o
-	gcc -c -o sum_calc sum.o main.o
+	gcc -o sum_test sum.o main.o
 
 sum.o : sum.c sum.h
 	gcc -c -o sum.o sum.c
